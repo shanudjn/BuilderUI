@@ -113,6 +113,18 @@ body{
     "footer footer footer footer";
 }
 
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+
+.footer a{
+    color : black;
+    color: var(--white);
+    
+}
+
 @media only screen and (max-width: 768px){
     .aside{
         display: none;
