@@ -1,0 +1,118 @@
+/*layout*/
+body{
+    margin: 0;
+}
+.nav{
+    grid-area : nav;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+    align-items: baseline;
+    border-bottom: 1px solid var(--border-color);
+   
+
+}
+
+.navbar-links{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.navbar-links-list{
+    display: flex;
+    list-style: none;
+           
+}
+.navbar-links-list-item {
+    display: flex;
+    padding-right: 1rem;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+.navbar-links-list-item a{
+    text-decoration: none;
+    color: black;
+    
+}
+.navbar-links-list-item a:hover{
+    color: var(--primary-color);
+    cursor:pointer
+}
+
+
+/*
+**/
+.aside{
+    grid-area: aside;
+    /* border:1px solid red; */
+    padding:1rem;
+    border-right:1px solid var(--border-color);
+    position: sticky;
+}
+.aside li{
+    list-style: none;
+    /* border:1px solid red; */
+    margin:0.5rem;
+    padding:0.5rem;
+    font-size: 12px;
+    border-radius: 4px;
+}
+.aside-list-item a{
+    color:black;
+    text-decoration: none;
+}
+
+.aside ul{
+    /* border:1px solid black; */
+    padding: 0;
+}
+.aside a{
+    color: none;
+}
+.aside li:hover{
+    background-color: #E5E7EB;
+}
+
+.doc{
+    grid-area : doc;
+    /* border:1px solid yellow; */
+    padding:1rem;
+}
+.doc h2{
+    color: var(--primary-color);
+}
+.div-example .heading {
+    color: black;
+}
+
+.div-example, .code-snippet{
+    background-color: #F9FAFB;
+    padding: 0.5rem;
+    max-width: 600px;
+    max-width: 700px;
+}
+
+.div-card{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+footer{
+    grid-area:footer;
+    /* border:1px solid black; */
+}
+body{
+    display:grid;
+    grid-template-areas: 
+    "nav nav nav nav "
+    "aside doc doc doc "
+    "footer footer footer footer";
+}
+
+@media only screen and (max-width: 768px){
+    .aside{
+        display: none;
+    }
+}
