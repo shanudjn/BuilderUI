@@ -80,11 +80,7 @@ body{
     /* border:1px solid yellow; */
     padding:1rem;
 }
-.doc h2{
-    color: var(--primary-color);
-    
-    
-}
+
 .div-example .heading {
     color: black;
 }
