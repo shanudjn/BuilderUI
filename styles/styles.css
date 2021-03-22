@@ -106,9 +106,9 @@ footer{
 body{
     display:grid;
     grid-template-areas: 
-    "nav nav nav nav "
-    "aside doc doc doc "
-    "footer footer footer footer";
+    "nav nav nav "
+    "aside doc doc"
+    "footer footer footer";
 }
 
 @media only screen and (max-width: 768px){
